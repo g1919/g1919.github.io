@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.3.2实现为登录页面插入背景图片</title>
+    <style>
+        .box1{
+            width: 1000px;
+            height :465px;
+            margin:0 auto;
+            background-image:url("images/会聊天的机器人.png");
+            /*background-position:top;*/
+            background-position:center 100px;
+            /*这个设置了图片的位置*/
+            /*值
+            left top
+            left center
+            left bottom
+            right top
+            right center
+            right bottom
+            center top
+            center center
+            center bottom
+如果仅指定一个关键字，其他值将会是"center"
+            background-position:250px top;
+
+            x% y%
+            第一个值是水平位置，第二个值是垂直。左上角是0％0％。右下角是100％100％。如果仅指定了一个值，其他值将是50％。 默认值为：0％0％
+
+            xpos ypos
+            第一个值是水平位置，第二个值是垂直。左上角是0。单位可以是像素（0px0px）或任何其他 CSS单位。如果仅指定了一个值，其他值将是50％
+            你可以混合使用％和positions
+inherit	指定background-position属性设置应该从父元素继承
+*/
+            background-repeat:no-repeat;
+            background-color:darkorange;
+            border:2px solid red;
+        }
+        .login{
+        text-align: center}
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="box1" align="center">
+        <img src="images/fg2.png" alt=""><br><br><br><br><br><br>
+        <div class="login">
+            <p class="user">用户名:<input type="text" value="请输入用户名"></p>
+            <p class="pass">密&nbsp;码:<input type="password" value=""></p>
+            <input type="button" value="登录">
+            <input type="reset" value="重新输入">
+        </div>
+    </div>
+</div>
+</body>
+</html>
